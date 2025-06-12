@@ -3,7 +3,7 @@ lock "~> 3.10"
 
 set :application, "task_app"
 set :repo_url, "https://github.com/moaoyama/dpro_unicorn.git"
-set :linked_files, %w{config/credentials.yml.enc config/master.key}
+set :linked_files, %w{config/credentials.yml.enc config/master.key .env}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
 set :keep_releases, 5
 set :rbenv_ruby, '3.3.0'
